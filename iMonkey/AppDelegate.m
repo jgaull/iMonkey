@@ -6,6 +6,9 @@
 //  Copyright (c) 2014 Modeo. All rights reserved.
 //
 
+#import <Parse/Parse.h>
+#import <ParseUI/ParseUI.h>
+
 #import "AppDelegate.h"
 
 @interface AppDelegate ()
@@ -17,6 +20,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    [PFImageView class];
+    
+    [Parse setApplicationId:@"W5WzPAYcFDHlnUtxhGHkIu2qPQ0mO4g2XixZu9wv"
+                  clientKey:@"Jr1xrBzX1CbJ6tsRIpqF7d54hNBiOA39dln6FUOc"];
+    
     return YES;
 }
 
