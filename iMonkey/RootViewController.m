@@ -56,7 +56,13 @@
 }
 
 - (void)loadData {
+    
+    //PFObject *light = [PFObject objectWithoutDataWithObjectId:@"asZchupARE"];
+    PFObject *light = [PFObject objectWithoutDataWithClassName:@"Light" objectId:@"asZchupARE"];
+    
     PFQuery *query = [[PFQuery alloc] initWithClassName:@"Pattern"];
+    [query whereKey:@"light" equalTo:light];
+    [query includeKey:@"light"];
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
         if (!error) {
             

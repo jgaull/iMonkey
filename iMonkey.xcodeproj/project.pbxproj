@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FC432EFE1A5654AF00A39908 /* m232_hardware in Resources */ = {isa = PBXBuildFile; fileRef = FC432EFB1A5654AF00A39908 /* m232_hardware */; };
+		FC432F021A5654FD00A39908 /* m232_hardware_with_lights in Resources */ = {isa = PBXBuildFile; fileRef = FC432F011A5654FD00A39908 /* m232_hardware_with_lights */; };
+		FC432F051A5655C000A39908 /* red_light.png in Resources */ = {isa = PBXBuildFile; fileRef = FC432F031A5655C000A39908 /* red_light.png */; };
+		FC432F061A5655C000A39908 /* white_light.png in Resources */ = {isa = PBXBuildFile; fileRef = FC432F041A5655C000A39908 /* white_light.png */; };
 		FC89034E1A4633FF007715E7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FC89034D1A4633FF007715E7 /* main.m */; };
 		FC8903511A4633FF007715E7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FC8903501A4633FF007715E7 /* AppDelegate.m */; };
 		FC8903541A4633FF007715E7 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC8903531A4633FF007715E7 /* RootViewController.m */; };
@@ -32,6 +36,7 @@
 		FC8903941A463771007715E7 /* ParseCrashReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC89038F1A463771007715E7 /* ParseCrashReporting.framework */; };
 		FC8903951A463771007715E7 /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC8903901A463771007715E7 /* ParseFacebookUtils.framework */; };
 		FC8903961A463771007715E7 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC8903911A463771007715E7 /* ParseUI.framework */; };
+		FC8903991A4644A2007715E7 /* LEDCodeView.m in Sources */ = {isa = PBXBuildFile; fileRef = FC8903981A4644A2007715E7 /* LEDCodeView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +50,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FC432EFB1A5654AF00A39908 /* m232_hardware */ = {isa = PBXFileReference; lastKnownFileType = file; path = m232_hardware; sourceTree = "<group>"; };
+		FC432F011A5654FD00A39908 /* m232_hardware_with_lights */ = {isa = PBXFileReference; lastKnownFileType = file; path = m232_hardware_with_lights; sourceTree = "<group>"; };
+		FC432F031A5655C000A39908 /* red_light.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = red_light.png; sourceTree = "<group>"; };
+		FC432F041A5655C000A39908 /* white_light.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = white_light.png; sourceTree = "<group>"; };
 		FC8903481A4633FF007715E7 /* iMonkey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iMonkey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC89034C1A4633FF007715E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC89034D1A4633FF007715E7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -78,6 +87,8 @@
 		FC89038F1A463771007715E7 /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseCrashReporting.framework; sourceTree = "<group>"; };
 		FC8903901A463771007715E7 /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
 		FC8903911A463771007715E7 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
+		FC8903971A4644A2007715E7 /* LEDCodeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LEDCodeView.h; sourceTree = "<group>"; };
+		FC8903981A4644A2007715E7 /* LEDCodeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LEDCodeView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +125,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FC432EF61A564CC700A39908 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				FC432F031A5655C000A39908 /* red_light.png */,
+				FC432F041A5655C000A39908 /* white_light.png */,
+				FC432F011A5654FD00A39908 /* m232_hardware_with_lights */,
+				FC432EFB1A5654AF00A39908 /* m232_hardware */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
 		FC89033F1A4633FF007715E7 = {
 			isa = PBXGroup;
 			children = (
@@ -151,6 +173,9 @@
 		FC89034A1A4633FF007715E7 /* iMonkey */ = {
 			isa = PBXGroup;
 			children = (
+				FC432EF61A564CC700A39908 /* Assets */,
+				FC8903971A4644A2007715E7 /* LEDCodeView.h */,
+				FC8903981A4644A2007715E7 /* LEDCodeView.m */,
 				FC89034F1A4633FF007715E7 /* AppDelegate.h */,
 				FC8903501A4633FF007715E7 /* AppDelegate.m */,
 				FC8903521A4633FF007715E7 /* RootViewController.h */,
@@ -273,8 +298,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC432F051A5655C000A39908 /* red_light.png in Resources */,
 				FC89035D1A4633FF007715E7 /* Main.storyboard in Resources */,
+				FC432F021A5654FD00A39908 /* m232_hardware_with_lights in Resources */,
 				FC8903621A4633FF007715E7 /* LaunchScreen.xib in Resources */,
+				FC432F061A5655C000A39908 /* white_light.png in Resources */,
+				FC432EFE1A5654AF00A39908 /* m232_hardware in Resources */,
 				FC89035F1A4633FF007715E7 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,6 +323,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC8903571A4633FF007715E7 /* ThemeViewController.m in Sources */,
+				FC8903991A4644A2007715E7 /* LEDCodeView.m in Sources */,
 				FC8903511A4633FF007715E7 /* AppDelegate.m in Sources */,
 				FC89035A1A4633FF007715E7 /* ThemeModelController.m in Sources */,
 				FC89034E1A4633FF007715E7 /* main.m in Sources */,
@@ -496,6 +526,7 @@
 				FC8903731A4633FF007715E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FC8903741A4633FF007715E7 /* Build configuration list for PBXNativeTarget "iMonkeyTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +535,7 @@
 				FC8903761A4633FF007715E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
