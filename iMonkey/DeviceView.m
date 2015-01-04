@@ -53,6 +53,28 @@
         [self.LEDImages addObject:LEDImageView];
         [self addSubview:LEDImageView];
     }
+    
+    [self drawPattern];
+}
+
+- (void)drawPattern {
+    
+    if (self.LEDImages.count == self.pattern.count) {
+        for (int i = 0; i < self.LEDImages.count; i++) {
+            BOOL lightState = [[_pattern objectAtIndex:i] boolValue];
+            
+            NSString *image;
+            if (lightState) {
+                image = @"red_light";
+            }
+            else {
+                image = @"white_light";
+            }
+            
+            UIImageView *ledImage = [self.LEDImages objectAtIndex:i];
+            ledImage.image = [UIImage imageNamed:image];
+        }
+    }
 }
 
 - (void)setDevice:(PFObject *)device {
@@ -79,6 +101,16 @@
         }];
         
         _device = device;
+    }
+}
+
+- (void)setPattern:(NSArray *)pattern {
+    if (pattern.count != self.ledCount / 2) {
+        NSLog(@"not the correct number of leds in your pattern.");
+    }
+    else {
+        _pattern = [NSArray arrayWithArray:pattern];
+        [self drawPattern];
     }
 }
 

@@ -13,5 +13,6 @@
 @interface DeviceView : UIView
 
 @property (strong, nonatomic) PFObject *device;
+@property (strong, nonatomic) NSArray *pattern;
 
 @end

@@ -46,6 +46,8 @@
     
     PFObject *light = self.theme[@"light"];
     self.deviceView.device = light;
+    
+    self.deviceView.pattern = self.theme[@"pattern"];
 }
 
 @end
