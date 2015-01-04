@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FC2678881A58AEE5000A7938 /* DeviceView.m in Sources */ = {isa = PBXBuildFile; fileRef = FC2678871A58AEE5000A7938 /* DeviceView.m */; };
 		FC432EFE1A5654AF00A39908 /* m232_hardware in Resources */ = {isa = PBXBuildFile; fileRef = FC432EFB1A5654AF00A39908 /* m232_hardware */; };
 		FC432F021A5654FD00A39908 /* m232_hardware_with_lights in Resources */ = {isa = PBXBuildFile; fileRef = FC432F011A5654FD00A39908 /* m232_hardware_with_lights */; };
 		FC432F051A5655C000A39908 /* red_light.png in Resources */ = {isa = PBXBuildFile; fileRef = FC432F031A5655C000A39908 /* red_light.png */; };
@@ -50,6 +51,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FC2678861A58AEE5000A7938 /* DeviceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceView.h; sourceTree = "<group>"; };
+		FC2678871A58AEE5000A7938 /* DeviceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceView.m; sourceTree = "<group>"; };
 		FC432EFB1A5654AF00A39908 /* m232_hardware */ = {isa = PBXFileReference; lastKnownFileType = file; path = m232_hardware; sourceTree = "<group>"; };
 		FC432F011A5654FD00A39908 /* m232_hardware_with_lights */ = {isa = PBXFileReference; lastKnownFileType = file; path = m232_hardware_with_lights; sourceTree = "<group>"; };
 		FC432F031A5655C000A39908 /* red_light.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = red_light.png; sourceTree = "<group>"; };
@@ -188,6 +191,8 @@
 				FC89035E1A4633FF007715E7 /* Images.xcassets */,
 				FC8903601A4633FF007715E7 /* LaunchScreen.xib */,
 				FC89034B1A4633FF007715E7 /* Supporting Files */,
+				FC2678861A58AEE5000A7938 /* DeviceView.h */,
+				FC2678871A58AEE5000A7938 /* DeviceView.m */,
 			);
 			path = iMonkey;
 			sourceTree = "<group>";
@@ -324,6 +329,7 @@
 			files = (
 				FC8903571A4633FF007715E7 /* ThemeViewController.m in Sources */,
 				FC8903991A4644A2007715E7 /* LEDCodeView.m in Sources */,
+				FC2678881A58AEE5000A7938 /* DeviceView.m in Sources */,
 				FC8903511A4633FF007715E7 /* AppDelegate.m in Sources */,
 				FC89035A1A4633FF007715E7 /* ThemeModelController.m in Sources */,
 				FC89034E1A4633FF007715E7 /* main.m in Sources */,

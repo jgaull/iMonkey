@@ -63,6 +63,7 @@
     PFQuery *query = [[PFQuery alloc] initWithClassName:@"Pattern"];
     [query whereKey:@"light" equalTo:light];
     [query includeKey:@"light"];
+    [query orderByAscending:@"createdAt"];
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
         if (!error) {
             

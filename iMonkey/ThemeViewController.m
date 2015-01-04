@@ -8,13 +8,13 @@
 
 #import "ThemeViewController.h"
 #import "LEDCodeView.h"
+#import "DeviceView.h"
 
 @interface ThemeViewController ()
 
-@property (weak, nonatomic) IBOutlet PFImageView *monkeylightHardwareImage;
+@property (weak, nonatomic) IBOutlet DeviceView *deviceView;
 @property (strong, nonatomic) IBOutlet UILabel *themeNameLabel;
 @property (weak, nonatomic) IBOutlet PFImageView *thumbnailImageView;
-@property (weak, nonatomic) IBOutlet LEDCodeView *codeView;
 
 @end
 
@@ -44,15 +44,8 @@
     self.thumbnailImageView.file = self.theme[@"thumbnail"];
     [self.thumbnailImageView loadInBackground];
     
-    self.monkeylightHardwareImage.file = self.theme[@"light"][@"thumbnail"];
-    [self.monkeylightHardwareImage loadInBackground];
-    
-    self.codeView.code = @[[NSNumber numberWithBool:1],
-                           [NSNumber numberWithBool:0],
-                           [NSNumber numberWithBool:1],
-                           [NSNumber numberWithBool:1],
-                           [NSNumber numberWithBool:0],
-                           [NSNumber numberWithBool:1]];
+    PFObject *light = self.theme[@"light"];
+    self.deviceView.device = light;
 }
 
 @end
