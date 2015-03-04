@@ -12,6 +12,8 @@
 		FC432F021A5654FD00A39908 /* m232_hardware_with_lights in Resources */ = {isa = PBXBuildFile; fileRef = FC432F011A5654FD00A39908 /* m232_hardware_with_lights */; };
 		FC432F051A5655C000A39908 /* red_light.png in Resources */ = {isa = PBXBuildFile; fileRef = FC432F031A5655C000A39908 /* red_light.png */; };
 		FC432F061A5655C000A39908 /* white_light.png in Resources */ = {isa = PBXBuildFile; fileRef = FC432F041A5655C000A39908 /* white_light.png */; };
+		FC6A5A961A6DA1E40047C30F /* ProductGalleryCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC6A5A951A6DA1E40047C30F /* ProductGalleryCollectionViewController.m */; };
+		FC6A5A991A6DA7B90047C30F /* ThemeCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FC6A5A981A6DA7B90047C30F /* ThemeCollectionViewCell.m */; };
 		FC89034E1A4633FF007715E7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FC89034D1A4633FF007715E7 /* main.m */; };
 		FC8903511A4633FF007715E7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FC8903501A4633FF007715E7 /* AppDelegate.m */; };
 		FC8903541A4633FF007715E7 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC8903531A4633FF007715E7 /* RootViewController.m */; };
@@ -57,6 +59,10 @@
 		FC432F011A5654FD00A39908 /* m232_hardware_with_lights */ = {isa = PBXFileReference; lastKnownFileType = file; path = m232_hardware_with_lights; sourceTree = "<group>"; };
 		FC432F031A5655C000A39908 /* red_light.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = red_light.png; sourceTree = "<group>"; };
 		FC432F041A5655C000A39908 /* white_light.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = white_light.png; sourceTree = "<group>"; };
+		FC6A5A941A6DA1E40047C30F /* ProductGalleryCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductGalleryCollectionViewController.h; sourceTree = "<group>"; };
+		FC6A5A951A6DA1E40047C30F /* ProductGalleryCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductGalleryCollectionViewController.m; sourceTree = "<group>"; };
+		FC6A5A971A6DA7B90047C30F /* ThemeCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThemeCollectionViewCell.h; sourceTree = "<group>"; };
+		FC6A5A981A6DA7B90047C30F /* ThemeCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThemeCollectionViewCell.m; sourceTree = "<group>"; };
 		FC8903481A4633FF007715E7 /* iMonkey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iMonkey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC89034C1A4633FF007715E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC89034D1A4633FF007715E7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -193,6 +199,10 @@
 				FC89034B1A4633FF007715E7 /* Supporting Files */,
 				FC2678861A58AEE5000A7938 /* DeviceView.h */,
 				FC2678871A58AEE5000A7938 /* DeviceView.m */,
+				FC6A5A941A6DA1E40047C30F /* ProductGalleryCollectionViewController.h */,
+				FC6A5A951A6DA1E40047C30F /* ProductGalleryCollectionViewController.m */,
+				FC6A5A971A6DA7B90047C30F /* ThemeCollectionViewCell.h */,
+				FC6A5A981A6DA7B90047C30F /* ThemeCollectionViewCell.m */,
 			);
 			path = iMonkey;
 			sourceTree = "<group>";
@@ -329,11 +339,13 @@
 			files = (
 				FC8903571A4633FF007715E7 /* ThemeViewController.m in Sources */,
 				FC8903991A4644A2007715E7 /* LEDCodeView.m in Sources */,
+				FC6A5A991A6DA7B90047C30F /* ThemeCollectionViewCell.m in Sources */,
 				FC2678881A58AEE5000A7938 /* DeviceView.m in Sources */,
 				FC8903511A4633FF007715E7 /* AppDelegate.m in Sources */,
 				FC89035A1A4633FF007715E7 /* ThemeModelController.m in Sources */,
 				FC89034E1A4633FF007715E7 /* main.m in Sources */,
 				FC8903541A4633FF007715E7 /* RootViewController.m in Sources */,
+				FC6A5A961A6DA1E40047C30F /* ProductGalleryCollectionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
